@@ -12,6 +12,24 @@ html{
     background: linear-gradient(to left , #099DF0, #045385, #032457);
 }
 
+/* scrollbar */
+body::-webkit-scrollbar {
+    width: 5px;
+    /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: #2A2A2A;
+    /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 255, 255);
+    /* color of the scroll thumb */
+    border-radius: 20px;
+    /* roundness of the scroll thumb */
+}
+
 
 header{
     width: 100%;
@@ -53,4 +71,64 @@ header{
     font-weight: normal;
     font-weight: normal;
     font-size: 16px;
+}
+
+.main{
+    margin-left: 65px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.button-container h1{
+    font-family: 'Righteous';
+    color: white;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 50px;
+}
+#botao1{
+    margin-top: 15px;
+    font-family: 'Lexend';
+    color: white;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    background: transparent;
+    border: 2px solid #CB3939;
+    border-radius: 20px;
+    width: 150px;
+    height: 45px;
+    margin-bottom: 57.6%;
+}
+#botao1:hover{
+    cursor: pointer;
+    background-color: #CB3939;
+    transition: all 1s ease;
+}
+.main img{
+    width: 130px;
+    margin-right: 150px;
+}
+
+.main img:hover{
+    transform: translateY(-10px);
+    transition: all 1s ease;
+    transform: scale(1.1);
+}
+
+footer{
+    border-top: 1px solid white;
+    width: 100%;
+    height: 77px;
+    background: rgba(0, 0, 0, 0.466);
+}
+
+footer p{
+    font-family: 'Lexend';
+    color: white;
+    font-weight: normal;
+    font-style: normal;
+    text-align: center;
+    margin-top: 20px;
 }
